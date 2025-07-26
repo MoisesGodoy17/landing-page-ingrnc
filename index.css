@@ -1,0 +1,438 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: #726d9d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0.5rem;
+}
+
+/* nav del header */
+.header-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  gap: 1rem;
+}
+
+/* nav que esta dentro de la imagen */
+.nav {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  gap: 3rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  color: #726d9d;
+  /* O el color que quieras al pasar el mouse */
+}
+
+.banner {
+  background-color: #ffffff;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* imagen principal */
+.image-container {
+  width: 100%;
+  height: 1105px;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* muestra la imagen principal en el carrucel */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* texto de la imagen principal */
+.text-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-100%, -30%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* posicion y ajustes de la nav que se encuentra en la imagen principal */
+.nav-img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -480%);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* boton de contacto debajo del texto de presentacion */
+.img-bt {
+  background-color: #260847;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+/* Main */
+main {
+  background-color: #f5f5f5;
+  padding: 0.01rem;
+}
+
+/*
+// Agrega lineas de separación entre secciones y padding 
+section {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border: 1px dashed #ccc;
+} */
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.hero-section {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ffffff;
+  gap: 3rem;
+}
+
+.mision,
+.vision {
+  box-shadow: 3px 3px 10px 3px #dddddd;
+  border-radius: 10px;
+  width: 700px;
+  padding: 2rem;
+  background: #260847;
+  background: linear-gradient(45deg, rgba(38, 8, 71, 1) 5%, rgba(114, 109, 157, 1) 100%);
+
+  /* Animacion al dejar el mouse */
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap:3rem;
+  font-size: 1.3rem;
+  width: 1000px;
+  background-color: f5f5f5;
+  box-shadow: 3px 3px 10px 3px #dddddd;
+  border-radius: 10px;
+}
+
+.about-section img {
+  border-radius: 10px;
+}
+
+.main-title h1 {
+  color: #726d9d;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  padding: 3rem;
+  
+  
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  background-color:#f5f5f5;
+}
+
+.f-title h1 {
+  color: #726d9d;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  
+}
+
+.f-text p {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  width: 800px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.features-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background-color: #f5f5f5;
+  gap: 2.7rem;
+  width: 1130px;
+  
+}
+
+/* Feature item informacion de las tarjetas con animacion */
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  width: 250px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  color: white;
+
+  /* Color de la tarjeta 
+  background-image: url(/assets/planoimg.jpg);
+  background-size: cover;
+  */
+  background: #260847;
+  
+
+  /* Animacion al dejar el mouse */
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px 3px #dddddd;
+}
+
+/* Activa el hover al dejar el mouse en la tarjeta */
+.feature-item:hover,.mision:hover,
+.vision:hover {
+  transform: translateY(-10px);
+}
+
+/* Muestra el texto de la tarjeta */
+.feature-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+
+.feature-item:hover .feature-text {
+  opacity: 0.95;
+}
+
+.projects {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.p-title h1 {
+  color: #726d9d;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: row;
+  gap: 2.7rem;
+  width: 1130px;
+}
+
+.project-card {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 10px 3px #dddddd;
+  padding: 1rem;
+}
+
+.project-card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  background-color: #f5f5f5;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+
+.contact h1 {
+  color: #726d9d;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.contact p {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  width: 1000px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  background-color: #f5f5f5;
+  width: 1000px;
+}
+
+.contact-section form{
+  background: #260847;
+  background: linear-gradient(45deg, rgba(38, 8, 71, 1) 5%, rgba(114, 109, 157, 1) 100%);
+  box-shadow: 3px 3px 10px 3px #dddddd;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.map {
+  background: #ffffff;
+  box-shadow: 3px 3px 10px 3px #dddddd;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.map h2 {
+  color: #726d9d;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-section li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section input, textarea{
+  border-radius: 20px;
+  border: 2px solid #260847;
+  padding: 1rem;
+  width: 500px;
+  resize: none;
+  font-size: 1.3rem;
+}
+
+.contact-section button {
+  color: #000000;
+  background-color: #726d9d;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+
+
+/* Footer */
+footer {
+  background-color: #726d9d;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
